@@ -1,0 +1,69 @@
+//sections
+.homeSec{
+	&:before{
+	content:'';
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-size:cover;
+	background-position: center;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	@include opacity (0.5);
+	@include transition ($tranBg);
+	}
+	&:hover:before, &.do-open:before{
+		@include opacity (1);
+		background-position:right center;
+	}
+	&.do-removeBg:before{
+		@include opacity (0.5) ;
+	}
+}
+
+.homeSec[data-name="secProjeto"]:before{
+	background-image: url('../images/pics/breafing.jpg');
+}
+.homeSec[data-name="secWireframe"]:before{
+	background-image: url('../images/pics/wireframe.jpg');
+}
+.homeSec[data-name="secPagina"]:before{
+	background-image: url('../images/pics/site.jpg');
+}
+.homeSec[data-name="secMobile"]:before{
+	background-image: url('../images/pics/mobile.jpg');
+}
+
+//forms
+
+//buttons e links
+.close{
+	font-size:$fTitulo;
+	color:$White;
+	border:none;
+	outline:none;
+	background:transparent;
+	cursor:pointer;
+}
+
+//icones
+
+//textos
+.secTitles{
+	font-size:$fTitulo;
+	color:$White;
+	text-align:center;
+	top:45%;
+	line-height:100%;
+	width:100%;
+	margin-left:0;
+	position:absolute;
+	span{
+		font-size: $fPadrao;
+		display:block;
+		margin-top:10px;
+	}
+}
+
+
+//box

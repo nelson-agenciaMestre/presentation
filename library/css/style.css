@@ -1,0 +1,513 @@
+@charset "CP850";
+/*DESENVOLVIDO POR AGÊNCIA MESTRE*/
+@-webkit-keyframes animTextAppear {
+  /* line 211, ../../sass/partials/_variables.scss */
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    margin-left: -100%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+  }
+
+  /* line 212, ../../sass/partials/_variables.scss */
+  100% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    margin-left: 0;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@-moz-keyframes animTextAppear {
+  /* line 211, ../../sass/partials/_variables.scss */
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    margin-left: -100%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+  }
+
+  /* line 212, ../../sass/partials/_variables.scss */
+  100% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    margin-left: 0;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@-ms-keyframes animTextAppear {
+  /* line 211, ../../sass/partials/_variables.scss */
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    margin-left: -100%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+  }
+
+  /* line 212, ../../sass/partials/_variables.scss */
+  100% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    margin-left: 0;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+@keyframes animTextAppear {
+  /* line 211, ../../sass/partials/_variables.scss */
+  0% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    margin-left: -100%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+  }
+
+  /* line 212, ../../sass/partials/_variables.scss */
+  100% {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    margin-left: 0;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    -o-filter: blur(0px);
+    filter: blur(0px);
+  }
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+fieldset, img {
+  border: 0;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+caption, th {
+  text-align: left;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+q:before, q:after {
+  content: '';
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+abbr, acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  box-sizing: content-box;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+input, textarea, select {
+  *font-size: 100%;
+}
+
+/* line 1, ../../sass/partials/_reset.scss */
+legend {
+  color: #000;
+}
+
+/* line 2, ../../sass/partials/_reset.scss */
+input[type=text]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* line 3, ../../sass/partials/_reset.scss */
+input[type=text]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* line 7, ../../sass/partials/_reset.scss */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* line 10, ../../sass/partials/_reset.scss */
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: 0px;
+  focus: 0px;
+}
+
+/* line 15, ../../sass/partials/_reset.scss */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 19, ../../sass/partials/_reset.scss */
+a:focus {
+  outline: 0px;
+}
+
+/* line 22, ../../sass/partials/_reset.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+}
+
+/* line 27, ../../sass/partials/_reset.scss */
+.width-fix {
+  position: relative;
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* line 48, ../../sass/partials/_reset.scss */
+.left {
+  float: left;
+  left: 0;
+}
+
+/* line 52, ../../sass/partials/_reset.scss */
+.right {
+  float: right;
+  right: 0;
+}
+
+/* line 56, ../../sass/partials/_reset.scss */
+.first {
+  margin-left: 0px !important;
+}
+
+/* line 59, ../../sass/partials/_reset.scss */
+.clear {
+  clear: both;
+}
+
+/* line 3, ../../sass/partials/_elementos.scss */
+.homeSec:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -webkit-transition: opacity 0.3s linear, background 0.5s ease-in-out 0.3s;
+  -moz-transition: opacity 0.3s linear, background 0.5s ease-in-out 0.3s;
+  -o-transition: opacity 0.3s linear, background 0.5s ease-in-out 0.3s;
+  transition: opacity 0.3s linear, background 0.5s ease-in-out 0.3s;
+}
+/* line 15, ../../sass/partials/_elementos.scss */
+.homeSec:hover:before, .homeSec.do-open:before {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  background-position: right center;
+}
+/* line 19, ../../sass/partials/_elementos.scss */
+.homeSec.do-removeBg:before {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+
+/* line 24, ../../sass/partials/_elementos.scss */
+.homeSec[data-name="secProjeto"]:before {
+  background-image: url("../images/pics/breafing.jpg");
+}
+
+/* line 27, ../../sass/partials/_elementos.scss */
+.homeSec[data-name="secWireframe"]:before {
+  background-image: url("../images/pics/wireframe.jpg");
+}
+
+/* line 30, ../../sass/partials/_elementos.scss */
+.homeSec[data-name="secPagina"]:before {
+  background-image: url("../images/pics/site.jpg");
+}
+
+/* line 33, ../../sass/partials/_elementos.scss */
+.homeSec[data-name="secMobile"]:before {
+  background-image: url("../images/pics/mobile.jpg");
+}
+
+/* line 40, ../../sass/partials/_elementos.scss */
+.close {
+  font-size: 28px;
+  color: white;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* line 52, ../../sass/partials/_elementos.scss */
+.secTitles {
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  top: 45%;
+  line-height: 100%;
+  width: 100%;
+  margin-left: 0;
+  position: absolute;
+}
+/* line 61, ../../sass/partials/_elementos.scss */
+.secTitles span {
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* line 7, ../../sass/style.scss */
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 0px;
+  font-family: "Lato", arial, sans-serif;
+  background: #3f5faa;
+  overflow: hidden;
+}
+
+/* line 18, ../../sass/style.scss */
+header {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 30;
+}
+/* line 26, ../../sass/style.scss */
+header .close {
+  pointer-events: none;
+  float: right;
+  top: 80px;
+  right: -60px;
+  display: block;
+  position: absolute;
+  z-index: 20;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+  transition: right 0.3s ease-in-out 0s;
+}
+/* line 35, ../../sass/style.scss */
+header .close.do-open {
+  pointer-events: initial;
+  right: 20px;
+  -webkit-transition: right 0.3s ease-in-out 1.4s;
+  -moz-transition: right 0.3s ease-in-out 1.4s;
+  -o-transition: right 0.3s ease-in-out 1.4s;
+  transition: right 0.3s ease-in-out 1.4s;
+}
+
+/* line 44, ../../sass/style.scss */
+footer {
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: black;
+  z-index: 30;
+}
+
+/* line 55, ../../sass/style.scss */
+.homeSec {
+  width: -webkit-calc(100% / 4);
+  width: -noz-calc(100% / 4);
+  width: calc(100% / 4);
+  height: 100%;
+  background-color: #3f5faa;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: left 0.5s linear, width 0.5s linear 0.6s;
+  -moz-transition: left 0.5s linear, width 0.5s linear 0.6s;
+  -o-transition: left 0.5s linear, width 0.5s linear 0.6s;
+  transition: left 0.5s linear, width 0.5s linear 0.6s;
+}
+/* line 68, ../../sass/style.scss */
+.homeSec .secTitles {
+  -webkit-animation-delay: 0s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: animTextAppear;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-play-state: running;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: animTextAppear;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-play-state: running;
+  -moz-animation-direction: normal;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -o-animation-delay: 0s;
+  -o-animation-duration: 1s;
+  -o-animation-name: animTextAppear;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-play-state: running;
+  -o-animation-direction: normal;
+  -o-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-name: animTextAppear;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-play-state: running;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  height: auto;
+  overflow: hidden;
+}
+/* line 73, ../../sass/style.scss */
+.homeSec.do-open {
+  width: 100%;
+  z-index: 15;
+  left: 0;
+  top: 0;
+  cursor: default;
+  margin-left: 0px;
+}
+/* line 81, ../../sass/style.scss */
+.homeSec.do-behind {
+  width: 0;
+  left: 0;
+}
+
+/* line 92, ../../sass/style.scss */
+.homeSec .secTitles {
+  -webkit-transition: top 0.5s ease-in-out 0s;
+  -moz-transition: top 0.5s ease-in-out 0s;
+  -o-transition: top 0.5s ease-in-out 0s;
+  transition: top 0.5s ease-in-out 0s;
+}
+/* line 96, ../../sass/style.scss */
+.homeSec.do-open .secTitles {
+  top: 70px;
+  -webkit-transition: top 0.5s ease-in-out 1.2s;
+  -moz-transition: top 0.5s ease-in-out 1.2s;
+  -o-transition: top 0.5s ease-in-out 1.2s;
+  transition: top 0.5s ease-in-out 1.2s;
+}
+
+/* line 6, ../../sass/partials/_hacks.scss */
+.ie9 .gradient {
+  background: white !important;
+  filter: none;
+}
+/* line 10, ../../sass/partials/_hacks.scss */
+.ie9 .clientesArea:before {
+  display: none;
+}
+
+@-moz-document url-prefix() {}
+/*************************************************
+
+AFTER WP
+
+***************************************************/

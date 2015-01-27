@@ -1,0 +1,108 @@
+/*DESENVOLVIDO POR AGÊNCIA MESTRE*/
+@import 'partials/variables';
+@import 'partials/reset';
+@import 'partials/elementos';
+
+//body
+body{
+	position:absolute;
+	height:100%;
+	width:100%;
+	font-size:0px;
+	font-family: $fonteGeral;
+	background: $SanMarino;
+	overflow:hidden;
+}
+
+//header
+header{
+	width:100%;
+	height:40px;
+	position:fixed;
+	top:0;
+	left:0;
+	background: $Black;
+	z-index:30;
+	.close{
+		pointer-events:none;
+		float:right;
+		top:80px;	
+		right:-60px;
+		display:block;
+		position:absolute;
+		z-index:20;
+		@include transition ($tranCloseRev);
+		&.do-open{
+			pointer-events:initial;
+			right:20px;
+			@include transition ($tranClose);
+		}
+	}
+}
+
+//footer
+footer{
+	width:100%;
+	height:40px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background: $Black;
+	z-index:30;
+}
+
+//gerais Seções
+.homeSec{
+	@include calc("width", "100% / 4");
+	height:100%;
+	background-color: $SanMarino;
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	position:relative;
+	display:inline-block;
+	z-index:10;
+	cursor:pointer;
+	overflow:hidden;
+	@include transition ($tranSec);
+	.secTitles{
+		@include animation (animTextAppear, 0s, 1s, 1, ease-in-out, running, normal);
+		height:auto;
+		overflow:hidden;
+	}
+	&.do-open{
+		width:100%;
+		z-index:15;
+		left:0;
+		top:0;
+		cursor:default;
+		margin-left:0px;
+	}
+	&.do-behind{
+		width:0;
+		left:0;
+		.secTitles{
+			//height:0px;	
+		}
+	}
+}
+
+//após abrir Seções
+.homeSec{
+	.secTitles{
+		@include transition ($tranSecOpenRev);
+	}
+	&.do-open{
+		.secTitles{
+			top:70px;
+			@include transition ($tranSecOpen);
+		}
+	}
+}
+
+
+
+
+@import 'partials/queries';
+@import 'partials/hacks';
+@import 'partials/fixes';

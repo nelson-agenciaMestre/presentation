@@ -1,0 +1,17 @@
+<NotepadPlus>
+    <Session activeView="1">
+        <mainView activeIndex="1">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="736" startPos="81" endPos="81" selMode="0" lang="CSS" encoding="-1" filename="C:\wamp\www\__PAGS\presentation\library\css\fonts\fonts.css" backupFilePath="" originalFileLastModifTimestamp="1421927433" />
+            <File firstVisibleLine="17" xOffset="0" scrollWidth="1208" startPos="1355" endPos="1355" selMode="0" lang="HTML" encoding="-1" filename="C:\wamp\www\__PAGS\presentation\index.html" backupFilePath="" originalFileLastModifTimestamp="1421929347" />
+        </mainView>
+        <subView activeIndex="1">
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="888" startPos="151" endPos="151" selMode="0" lang="Javascript" encoding="-1" filename="C:\wamp\www\__PAGS\presentation\library\js\scripts.js" backupFilePath="" originalFileLastModifTimestamp="1421927479" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="5440" startPos="132" endPos="132" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\__PAGS\presentation\sass\style.scss" backupFilePath="" originalFileLastModifTimestamp="1421928254" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="5440" startPos="59" endPos="59" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\__PAGS\presentation\sass\partials\_variables.scss" backupFilePath="" originalFileLastModifTimestamp="1421929328" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="5440" startPos="196" endPos="196" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\__PAGS\presentation\sass\partials\_hacks.scss" backupFilePath="" originalFileLastModifTimestamp="1421842798" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="5440" startPos="281" endPos="281" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\__PAGS\presentation\sass\partials\_queries.scss" backupFilePath="" originalFileLastModifTimestamp="1421672147" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="5440" startPos="0" endPos="0" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\__PAGS\presentation\sass\partials\_reset.scss" backupFilePath="" originalFileLastModifTimestamp="1421678714" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="5440" startPos="53" endPos="53" selMode="0" lang="SCSS-Light" encoding="-1" filename="C:\wamp\www\__PAGS\presentation\sass\partials\_elementos.scss" backupFilePath="" originalFileLastModifTimestamp="1421928834" />
+        </subView>
+    </Session>
+</NotepadPlus>

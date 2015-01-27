@@ -1,0 +1,213 @@
+
+//cores
+$White: #ffffff;
+$Black: #000000;
+$SanMarino: #3F5FAA;
+$Rhino: #283853;
+$Comet: #62667C;
+$MidGray: #5D5E60;
+$CapeCod: #36413E;
+
+
+//font family
+$fonteGeral: 'Lato', arial, sans-serif ;
+
+//tamanhos
+$fPadrao: 14px;
+$fTitulo: 28px;
+
+
+//media-queries
+$total: 1040px;
+$tablet: 939px;
+$mobileLandscape: 740px;
+$mobile: 470px;
+
+//wrappers
+$width-fix: 1040px;
+$width-geral: 958px;
+
+//mixins
+@mixin input-placeholder {
+    &.placeholder { @content}
+    &:-moz-placeholder { @content }
+    &::-moz-placeholder { @content }
+    &:-ms-input-placeholder { @content }
+    &::-webkit-input-placeholder { @content } 
+}
+
+@mixin user-select ($user-select){
+	-webkit-touch-callout: $user-select;
+	-webkit-user-select: $user-select;
+	-khtml-user-select: $user-select;
+	-moz-user-select: $user-select;
+	-ms-user-select: $user-select;
+	user-select: $user-select;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow ($box-shadow){
+  -moz-box-shadow: $box-shadow;
+  -webkit-box-shadow: $box-shadow;
+  box-shadow: $box-shadow;
+}
+
+@mixin opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
+
+@mixin filter($filter){
+  -webkit-filter: $filter;
+  -moz-filter: $filter;
+  -ms-filter: $filter;
+  -o-filter: $filter;
+  filter: $filter;
+} 
+
+@mixin flipX {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"; 
+}
+@mixin flipY {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV"; 
+}
+
+@mixin transform-origin($val) {
+  -webkit-transform-origin: $val;
+  -moz-transform-origin: $val;
+  -ms-transform-origin: $val;
+  transform-origin: $val;
+}
+
+@mixin rotate( $degrees ) {
+  -webkit-transform: rotate(#{$degrees}deg);
+  -moz-transform: rotate(#{$degrees}deg);
+  -ms-transform: rotate(#{$degrees}deg);
+  -o-transform: rotate(#{$degrees}deg);
+  transform: rotate(#{$degrees}deg);
+
+  filter:  progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)});
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=#{cos($degrees)}, M12=-#{sin($degrees)}, M21=#{sin($degrees)}, M22=#{cos($degrees)})";
+  zoom: 1;
+}
+
+@mixin calc($property, $expression) { 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: -noz-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+} 
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+@mixin keyframes ($animationname) {
+  @-webkit-keyframes #{$animationname} {
+    @content; 
+  }
+  @-moz-keyframes #{$animationname} {
+    @content;
+  }
+  @-ms-keyframes #{$animationname} {
+    @content;
+  }
+  @keyframes #{$animationname} {
+    @content;
+  } 
+}
+
+@mixin animation ($animation, $delay, $duration, $vezes, $tipo, $state, $direction) {
+    -webkit-animation-delay: $delay;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-name: $animation;
+	-webkit-animation-iteration-count: $vezes;
+	-webkit-animation-timing-function: $tipo;
+	-webkit-animation-play-state: $state;
+	-webkit-animation-direction: $direction;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+    -moz-animation-delay: $delay;
+    -moz-animation-duration: $duration;
+    -moz-animation-name: $animation;
+	-moz-animation-iteration-count: $vezes;
+	-moz-animation-timing-function: $tipo;
+	-moz-animation-play-state: $state;
+	-moz-animation-direction: $direction;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+    -o-animation-delay: $delay;
+    -o-animation-duration: $duration;
+    -o-animation-name: $animation;
+	-o-animation-iteration-count: $vezes;
+	-o-animation-timing-function: $tipo;
+	-o-animation-play-state: $state;
+	-o-animation-direction: $direction;
+    -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+    animation-delay: $delay;
+    animation-duration: $duration;
+    animation-name: $animation;
+	animation-iteration-count: $vezes;
+	animation-timing-function: $tipo;
+	animation-play-state: $state;
+	animation-direction: $direction;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+//filtros
+
+$sombraboxInterno:  inset -1px 2px 12px 1px rgba( $White, 0.5 );
+$sombraboxInterno2:  inset -1px 2px 6px 1px rgba( $White, 0 );
+$sombraCirculo:  0px 6px 0px 0px rgba(0, 0, 0, 0.2);
+
+
+$sepia: sepia(100%) ;
+$saturate:  saturate(1.8);
+$noFilter: sepia(0)  saturate(1);
+
+@mixin linearRedGradientGray {
+	background: -webkit-linear-gradient(top, $White 36px, $Black 100%);
+	background: -moz-linear-gradient(top, $White 36px, $Black 100%);
+	background: -o-linear-gradient(top, $White 36px, $Black 100%);
+	background: -ms-linear-gradient(top, $White 36px, $Black 100%);
+	background: linear-gradient(top, $White 36px, $Black 100%);
+}
+
+
+//transitions
+$tranAll: all 0.3s ;
+$tranOpacity: opacity 0.2s;
+$tranClose: right 0.3s ease-in-out 1.4s;
+$tranCloseRev: right 0.3s ease-in-out 0s;
+$tranSec: left 0.5s linear,  width 0.5s linear 0.6s;
+$tranSecOpen: top 0.5s ease-in-out 1.2s;
+$tranSecOpenRev: top 0.5s ease-in-out 0s;
+$tranBg: opacity 0.3s linear, background 0.5s ease-in-out 0.3s;
+
+
+//animations
+@include keyframes (animTextAppear) {
+	0%{@include opacity (0); margin-left: -100%; @include filter (blur(3px));}
+	100%{@include opacity (1); margin-left:0; @include filter (blur(0px));}
+}

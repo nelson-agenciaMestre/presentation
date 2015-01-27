@@ -1,0 +1,20 @@
+//hacks
+.ie {
+
+}
+.ie9 {
+	.gradient{
+		background: $White !important;
+		filter: none;
+	}
+	.clientesArea:before{
+		display:none;
+	}
+}
+.win.gecko {
+
+}
+
+@-moz-document url-prefix() { 
+
+}
